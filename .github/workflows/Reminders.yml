@@ -3,7 +3,7 @@ name: Weekly Reminder
 on:
   schedule:
     - cron: '0 8 */14 * *' # כל שבועיים ב-9:00 UTC
-
+ workflow_dispatch: {}
 jobs:
   send_reminder:
     runs-on: ubuntu-latest
