@@ -15,6 +15,7 @@ jobs:
           server_port: 587                        # פורט
           username: ${{ secrets.MAIL_USER }}
           password: ${{ secrets.MAIL_PASS }}
+          from: ${{ secrets.MAIL_USER }} 
           subject: "תזכורת טוביה"
           body: "זמן טוב לתזכר את טוביה בעדכון דוד שבועי"
           to: dudibibla@gmail.com
