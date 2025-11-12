@@ -13,8 +13,8 @@ jobs:
         with:
           server_address: smtp.gmail.com          # כתובת שרת SMTP
           server_port: 587                        # פורט
-          username: ${{ dudibibla@gmail.com }}      # שם המשתמש במייל (Saved in Secrets)
-          password: ${{ qwas1234 }}      # סיסמא או token במייל (Saved in Secrets)
+          username: ${{ secrets.MAIL_USER }}
+          password: ${{ secrets.MAIL_PASS }}
           subject: "תזכורת טוביה"
           body: "זמן טוב לתזכר את טוביה בעדכון דוד שבועי"
           to: dudibibla@gmail.com
